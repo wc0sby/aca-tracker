@@ -2,17 +2,17 @@
 Let's create an app that will let us see where people are.
 
 ## Create a server
-* Make sure its listening
-* Make sure it can serve static files
-* Make sure to use body-parser
-* create a variable `lastClientId = 0`
-* create a variable `clients = []`
-* Make a route for a POST to path `/clients`
-  * The server should expect to receive a body as `{"name":"Bob"}`
-  * The server should increment lastClientId by one.
+* Make sure its listening x
+* Make sure it can serve static files x
+* Make sure to use body-parser x
+* create a variable `lastClientId = 0` x
+* create a variable `clients = []`x
+* Make a route for a POST to path `/clients` x
+  * The server should expect to receive a body as `{"name":"Bob"}` x
+  * The server should increment lastClientId by one. x
   * The server should create a new object `{name:theName, clientId:lastClientId,lat:"",long:"",location:""}` and add it to the clients array
-  * The server should send back this object as json
-* Make a route for a POST to path `/locations`
+  * The server should send back this object as json x
+* Make a route for a POST to path `/locations` 
   * The server should expect to receive a body as `{"id":3, lat:"30.23",long:"-97.7"}`
   * use this information to make a node-fetch call to a [Reverse GeoLocation Server](https://repl.it/@jw56578/TerrificSnappyConditionals)
   * extract the address from this call
